@@ -1,0 +1,333 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-family: "Luckiest Guy", cursive;
+  background: #222;
+  width: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3c3f51;
+}
+
+.Nav {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+}
+
+/* .Nav::after {
+  top: 0;
+  left: 0;
+  background-color: rgba(1, 1, 1, .5);
+  opacity: 0.6;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+} */
+
+.NavContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.landing {
+  background-color: #2222;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.Sections {
+  width: 100%;
+  height: 100vh;
+  padding: 0 2rem;
+}
+
+.Containers {
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SectionsHome {
+  width: 100%;
+  height: 100vh;
+  padding: 0 2rem;
+}
+
+.playButton {
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 85px;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  box-shadow: 5px 10px rgba(1, 1, 1, 0.5);
+}
+
+.playButton:hover {
+  color: gold;
+}
+
+.playButton:hover {
+  transform: scale(1.25);
+}
+
+.headerLogo {
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 10px 10px 0;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  box-shadow: 5px 10px #d8cfcd;
+}
+
+.WrapperPlayersButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  flex-direction: column;
+}
+
+.BackButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 5px rgba(1, 1, 1, 0.5);
+}
+
+.BackButton:hover {
+  color: red;
+  transform: scale(1.15);
+}
+
+.WrapperButtonBack {
+  z-index: 99;
+  position: absolute;
+  left: 50px;
+  bottom: 40px;
+}
+
+.WrapperBoxAgentSelect {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  gap: 1em;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 99;
+}
+
+.WrapperAgentCol {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 500px 1fr;
+}
+
+.WrapperReadyAgent {
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+.WrapperSelectAgent {
+  display: grid;
+  gap: 2em;
+  justify-items: center;
+  height: 100px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.nameAgent {
+  position: absolute;
+  top: -25%;
+  left: 22%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.coverMonster {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border: 3px solid white;
+  border-radius: 5px;
+  box-shadow: 5px 8px rgba(1, 1, 1, 0.5);
+}
+
+.Monsters {
+  width: 120px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.coverMonster:hover {
+  transition: 0.2s ease-in;
+  transform: scale(1.25);
+}
+
+.buttonStartGame {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 24px;
+  padding: 15px 2px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 3px rgba(1, 1, 1, 0.5);
+  background-color: red;
+}
+
+.buttonStartGame:hover {
+  color: pink;
+  box-shadow: 3px 5px rgba(1, 1, 1, 0.5);
+  transform: scale(1.25);
+}
+
+.ReadyAgents {
+  display: flex;
+  align-items: center;
+  background-color: rgba(1, 1, 1, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  gap: 1em;
+}
+
+.coverAgents {
+  border: 3px solid white;
+  border-radius: 5px;
+  box-shadow: red;
+}
+
+.coverAgents:hover {
+  transition: 0.2s ease-in;
+  transform: scale(0.9);
+}
+
+.readyMonsterPic {
+  width: 80px;
+  padding-top: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ButtonPlayGameRandom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding: 15px 2px;
+  z-index: 99;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 3px rgba(1, 1, 1, 0.5);
+  background-color: #d476e5;
+}
+
+.ButtonPlayGameRandom:hover {
+  color: pink;
+  box-shadow: 3px 5px rgba(1, 1, 1, 0.5);
+  transform: scale(0.9);
+}
+
+.ButtonShowRoundAndWinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding: 15px 2px;
+  z-index: 99;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 2px 3px rgba(1, 1, 1, 0.5);
+  background-color: #4189e4;
+}
+
+.ButtonResetRandom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding: 15px 2px;
+  z-index: 99;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 3px rgba(1, 1, 1, 0.5);
+  background-color: #222;
+}
+
+.ButtonResetRandom:hover {
+  color: pink;
+  box-shadow: 3px 5px rgba(1, 1, 1, 0.5);
+  transform: scale(0.9);
+}
+
+.die {
+  font-size: 10em;
+  color: antiquewhite;
+  z-index: 99;
+}
+
+.ShowTurnPlayer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding: 15px 2px;
+  z-index: 99;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+}
